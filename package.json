@@ -1,0 +1,12 @@
+{
+  "name": "node-slack-reboot",
+  "version": "1.0.0",
+  "description": "takes incoming slack command and reboots sever",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  },
+  "author": "altninja",
+  "license": "MIT"
+}
