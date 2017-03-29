@@ -8,7 +8,7 @@ const
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set('port', (process.env.PORT || 9001));
+app.set('port', (9001));
 
 app.get('/', (req, res) => {
 	res.send('Node-Slack-Rebooter9000XXL Online');
