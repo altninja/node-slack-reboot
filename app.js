@@ -15,12 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/reboot', (req, res) => {
-	var body = {
-		response_type: "in_channel",
-		text: 'Rebooting Dev Server'
-	};
-	res.send(body);	
-	exec("reboot", (error) => {
+	exec("/sbin/reboot", (error) => {
 		if (error !== null) {
 			var body = {
 				response_type: "in_channel",
